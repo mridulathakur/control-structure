@@ -10,9 +10,7 @@ while ($Counter <= 10) {
     $Counter++;
 }
 ?>
-<br>
-
-<br>
+<br><br>
 
 <?php
 $a = 5;
@@ -27,7 +25,7 @@ while ($a <= 10) {
 }
 ?>
 
-<br>
+<br><br>
 
 <?php
 $a = 0;
@@ -70,31 +68,42 @@ while ($a < 5) {
 
 <br>
 <?php
-$n = 5;
-$i = 1;
-while ($i <= $n) {
-
-    $j = $n - 1;
-    while ($j >= $i) {
-
-        echo "&nbsp";
-        $j--;
+    $outer = 1;
+    while ($outer <= 5) {
+        $space = 9;
+        while ($space >= $outer) {
+            echo "&nbsp";
+            $space--;
+        }
+        $print = 1;
+        while ($print <= $outer) {
+            echo "* ";
+            $print++;
+        }
+        echo "<br>";
+        $outer++;
     }
-    $k = 1;
-    while ($k <= $i) {
-
-        echo "*";
-        $k++;
+    ?>
+    <br><br>
+<br><br>
+<?php
+    $outer = 5;
+    while ($outer >= 1) {
+        $space = 9;
+        while ($space >= $outer) {
+            echo "&nbsp";
+            $space--;
+        }
+        $print = 1;
+        while ($print <= $outer) {
+            echo "* ";
+            $print++;
+        }
+        echo "<br>";
+        $outer--;
     }
-    echo "<br/>";
-    $i++;
-}
-?>
-<br>
-
-
-
-<br>
+    ?>
+    <br><br>
 
 <?php
 for ($i = 5; $i >= 1; $i--) {
@@ -128,16 +137,112 @@ for ($a=1;$a <=5; $a++) {
   }
   echo"<br>";
 }
-
 ?>
-<br>
+<br><br>
 <?php
-$n=5;
-for($i=1;$i<=$n;$i++){
-    for($j=5;$i>=1;$j--){
-     echo"*";
+    $outer = 5;
+    while ($outer >= 1) {
+        $space = 10;
+        while ($space >= $outer) {
+            echo "&nbsp ";
+            $space--;
+        }
+        $print = 1;
+        while ($print <= $outer) {
+            echo "*";
+            $print++;
+        }
+        echo "<br>";
+        $outer--;
     }
-    echo"<br>";
-}
+    ?>
+    <br><br>
+    
+    <?php
+    $R = 1;
+    while ($R <= 5) {
+        $C = 5;
+        while ($C >= $R) {
+            echo "* ";
+            $C--;
+        }
+        echo "<br>";
+        $R++;
+    }
+    $R1 = 1;
+    while ($R1 <= 5) {
+        $C1 = 1;
+        while ($C1 <= $R1) {
+            echo "* ";
+            $C1++;
+        }
+        echo "<br>";
+        $R1++;
+    }
+    ?>
+    <br><br>
+    <?php
 
+    $R = 5;
+    while ($R >= 2) {
+        $space = 9;
+        while ($space >= $R) {
+            echo "&nbsp ";
+            $space--;
+        }
+        $print = 1;
+        while ($print <= $R) {
+            echo "*";
+            $print++;
+        }
+        echo "<br>";
+        $R--;
+    }
+    $R1 = 2;
+    while ($R1 <= 5) {
+        $space1 = 9;
+        while ($space1 >= $R1) {
+            echo "&nbsp ";
+            $space1--;
+        }
+        $print1 = 1;
+        while ($print1 <= $R1) {
+            echo "*";
+            $print1++;
+        }
+        echo "<br>";
+        $R1++;
+    }
+    ?>
+
+    <br><br>
+    <?php
+    for($outer=1;$outer<=10;$outer++){
+        for($space=9;$space>=$outer;$space--){
+            echo"&nbsp ";
+        }
+        for($print=1;$print<=$outer;$print++){
+            echo"* ";
+        }
+        echo"<br>";
+    }
+    for($R=0;$R<5;$R++){
+        for($S=3;$S>$R;$S--){
+            echo"&nbsp ";
+        }
+        for($C=1;$C<5;$C++){
+            echo"* ";
+        }
+        echo"<br>";
+    }
 ?>
+$a = 0;
+while ($a < 5) {
+    $b = 0;
+    while ($b < 10) {
+        echo "*";
+        $b++;
+    }
+    echo "<br/>";
+    $a++;
+}
